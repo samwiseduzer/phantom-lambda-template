@@ -10,7 +10,13 @@ exports.handler = function(event, context, callback) {
 		});
 		fs.readdir('./node_modules', (err, files) => {
 			files.forEach(file => {
-				console.log(file);
+				console.log('./node_modules/' + file);
+			});
+			fs.readdir('./node_modules/html-pdf', (err, files) => {
+				files.forEach(file => {
+					console.log('./node_modules/html-pdf/' + file);
+				});
+				generator.test();
 			});
 			generator.test();
 		});
