@@ -1,0 +1,23 @@
+.img-page {
+	position: relative;
+}
+
+.img-page > img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+.img-page[taller] > img {
+	height: 100%;
+}
+
+.img-page[wider] > img {
+	width: 100%;
+}
+
+.page:not(.first) {
+	padding-top: 50px;
+}

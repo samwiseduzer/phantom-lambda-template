@@ -1,0 +1,18 @@
+each pageGroup in pageGroups
+    .page.root.first(id=pageGroup.id, num-pages=pageGroup.content[0].stats.numPages, img=pageGroup.content[0].img?pageGroup.content[0].img:'', larger=pageGroup.content[0].img?pageGroup.content[0].larger:'')
+        .contributor-name= pageGroup.content[0].name 
+        .contributor-text= pageGroup.content[0].text
+        
+//- style @font-face { font-family: #{font}; src: url(data:font/opentype;charset=utf-8;base64,#{font64})} 
+style @font-face { font-family: #{assets.bigFont}; src: url(data:application/font-ttf;charset=utf-8;base64,#{assets.bigFont64} format('truetype');)}
+//- style * {font-family:#{font}}
+//- style #intro * {font-family:#{bigFont}}
+
+style * {font-family: #{assets.bigFont}}
+style !{assets.mainCSS}
+style !{assets.finalCSS}
+script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+script !{assets.trunk8}
+script.
+  var pageGroups = !{JSON.stringify(pageGroups).replace(/<\//g, "<\\/")}
+script(type="text/javascript") !{assets.finalPrivateJS}

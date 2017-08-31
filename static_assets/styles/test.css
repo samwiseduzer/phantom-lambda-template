@@ -1,0 +1,9 @@
+#text,
+.page.text,
+.trial-page {
+	padding: 25px 80px;
+}
+
+.trial-page {
+	width: calc(576px - 2 * 80px);
+}

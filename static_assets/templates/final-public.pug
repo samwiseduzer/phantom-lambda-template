@@ -1,0 +1,15 @@
+each pageGroup in pageGroups
+    .page.root.first(num-pages=pageGroup.stats.numPages, img=pageGroup.img?pageGroup.img:'', larger=pageGroup.img?pageGroup.larger:'')
+        .contributor-name= pageGroup.name 
+        .contributor-text= pageGroup.text
+        
+//- style @font-face { font-family: #{font}; src: url(data:font/opentype;charset=utf-8;base64,#{font64})} 
+style @font-face { font-family: #{assets.bigFont}; src: url(data:application/font-ttf;charset=utf-8;base64,#{assets.bigFont64} format('truetype');)}
+//- style * {font-family:#{font}}
+//- style #intro * {font-family:#{bigFont}}
+style * {font-family: #{assets.bigFont}}
+style !{assets.mainCSS}
+style !{assets.finalCSS}
+script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+script !{assets.trunk8}
+script(type="text/javascript") !{assets.finalPublicJS}

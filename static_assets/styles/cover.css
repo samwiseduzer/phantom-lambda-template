@@ -1,0 +1,67 @@
+/* intro */
+#intro > .circle > div:nth-child(even) {
+	text-align: center;
+	color: rgb(151, 198, 192);
+}
+
+.intro-name {
+	font-size: 58px;
+	margin-top: 30px;
+}
+
+.intro-date {
+	font-size: 24px;
+}
+
+.circle.to {
+	margin-left: auto;
+	margin-right: auto;
+	width: 42px;
+	height: 42px;
+	background-color: rgb(151, 198, 192);
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.intro-circle {
+	background-color: rgb(220, 235, 230);
+	padding-top: 100px;
+}
+
+.intro-circle > img {
+	padding: 0px;
+	width: 68px;
+	margin: 60px auto;
+	display: block;
+}
+
+.intro-divider {
+	background-color: white;
+	border-radius: 10px;
+	margin: 7px auto 20px auto;
+	width: 60%;
+	height: 6px;
+}
+
+/* dedication */
+#dedication {
+	background-color: rgb(247, 243, 238);
+}
+
+#dedication > .circle {
+	padding-top: 100px;
+	background-color: white;
+}
+
+#dedication h2 {
+	color: rgb(147, 186, 184);
+	text-align: center;
+	font-size: 20px;
+}
+
+#dedication h2.commissioner {
+	text-transform: uppercase;
+	margin-top: 20px;
+}

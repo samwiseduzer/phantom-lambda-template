@@ -1,0 +1,23 @@
+.page#intro
+    .intro-circle.circle.big
+        .circle.to TO
+        .intro-name #{order.name}
+        .intro-divider &nbsp;
+        .intro-date #{order.deliveryDate}
+        img.logo(src=logo)
+.page.empty
+.page#dedication
+    .circle.big
+        h2 Loving thoughts and
+        h2 memories brought together
+        h2 to honor the person you have
+        h2 become and the impact you
+        h2 have had on so many.
+        h2.commissioner #{order.commissioner}
+
+//- style @font-face { font-family: #{font}; src: url(data:font/opentype;charset=utf-8;base64,#{font64})} 
+style @font-face { font-family: #{assets.bigFont}; src: url(data:application/font-ttf;charset=utf-8;base64,#{assets.bigFont64} format('truetype');)}
+//- style * {font-family:#{font}}
+//- style #intro * {font-family:#{bigFont}}
+style * {font-family: #{assets.bigFont}}
+style !{assets.mainCSS}

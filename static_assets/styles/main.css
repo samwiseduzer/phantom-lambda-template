@@ -1,0 +1,70 @@
+html,
+body,
+.page {
+	display: block;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	margin: 0px;
+	width: 576px;
+	max-width: 576px;
+}
+
+.page {
+	height: 576px;
+	max-height: 576px;
+}
+
+.page.first {
+	padding-top: 30px;
+}
+
+/* Circle Stuff */
+.circle {
+	border-radius: 100%;
+	margin: 0px auto;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.circle.big {
+	width: 480px;
+	height: 480px;
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+
+.empty {
+	content: "&nbsp;";
+}
+
+/* Contributor */
+.contributor-name {
+	font-size: 24px;
+	font-weight: 400;
+	width: calc(576px - 2 * 100px);
+	margin: 0px auto;
+}
+
+.contributor-name:after {
+	content: "";
+	width: 200px;
+	border-bottom: 2px solid rgb(200, 200, 200);
+	display: block;
+	margin: 10px auto;
+}
+
+.contributor-text {
+	font-size: 16px;
+	width: calc(576px - 2 * 80px);
+	line-height: 1.7;
+	font-weight: 300;
+	display: block;
+	margin: 0px auto;
+	white-space: pre-line;
+}
+
+.contributor-text,
+.contributor-name {
+	text-align: center;
+	color: rgb(139, 139, 139);
+}

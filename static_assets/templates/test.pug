@@ -1,0 +1,13 @@
+script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+#name !{contribution.name}
+#text !{contribution.text}
+
+//- style @font-face { font-family: #{font}; src: url(data:font/opentype;charset=utf-8;base64,#{font64})} 
+style @font-face { font-family: #{assets.bigFont}; src: url(data:application/font-ttf;charset=utf-8;base64,#{assets.bigFont64} format('truetype');)}
+//- style * {font-family:#{font}}
+//- style #intro * {font-family:#{bigFont}}
+style * {font-family: #{assets.bigFont}}
+style !{assets.mainCSS}
+style !{assets.testCSS}
+script !{assets.trunk8}
+script(type="text/javascript") !{assets.testJS}
