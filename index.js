@@ -8,6 +8,11 @@ exports.handler = function(event, context, callback) {
 		files.forEach(file => {
 			console.log(file);
 		});
-		generator.test();
+		fs.readdir('./node_modules', (err, files) => {
+			files.forEach(file => {
+				console.log(file);
+			});
+			generator.test();
+		});
 	});
 };
