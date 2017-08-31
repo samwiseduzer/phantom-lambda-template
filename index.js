@@ -17,14 +17,17 @@ exports.handler = function(event, context, callback) {
 					console.log('./node_modules/phantomjs-prebuilt/' + file);
 				});
 				fs.readdir('./node_modules/phantomjs-prebuilt/lib', (err, files) => {
+					if (err) return console.error(err);
 					files.forEach(file => {
 						console.log('./node_modules/phantomjs-prebuilt/lib/' + file);
 					});
 					fs.readdir('./node_modules/phantomjs-prebuilt/lib/phantom', (err, files) => {
+						if (err) return console.error(err);
 						files.forEach(file => {
 							console.log('./node_modules/phantomjs-prebuilt/lib/phantom/' + file);
 						});
 						fs.readdir('./node_modules/phantomjs-prebuilt/lib/phantom/bin', (err, files) => {
+							if (err) return console.error(err);
 							files.forEach(file => {
 								console.log('./node_modules/phantomjs-prebuilt/lib/phantom/bin' + file);
 							});
