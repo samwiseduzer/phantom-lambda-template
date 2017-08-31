@@ -5,7 +5,8 @@ phases:
       - npm install
   build:
     commands:
-      - npm run package && npm run publish
+      - npm run package
+      - npm run publish
 artifacts:
   type: zip
   files:
