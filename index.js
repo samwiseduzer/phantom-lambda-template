@@ -20,13 +20,13 @@ exports.handler = function(event, context, callback) {
 					files.forEach(file => {
 						console.log('./node_modules/phantomjs-prebuilt/lib/' + file);
 					});
-					fs.readdir('./node_modules/phantomjs-prebuilt/phantom', (err, files) => {
+					fs.readdir('./node_modules/phantomjs-prebuilt/lib/phantom', (err, files) => {
 						files.forEach(file => {
-							console.log('./node_modules/phantomjs-prebuilt/phantom/' + file);
+							console.log('./node_modules/phantomjs-prebuilt/lib/phantom/' + file);
 						});
-						fs.readdir('./node_modules/phantomjs-prebuilt/phantom/bin', (err, files) => {
+						fs.readdir('./node_modules/phantomjs-prebuilt/lib/phantom/bin', (err, files) => {
 							files.forEach(file => {
-								console.log('./node_modules/phantomjs-prebuilt/phantom/bin' + file);
+								console.log('./node_modules/phantomjs-prebuilt/lib/phantom/bin' + file);
 							});
 							generator.test();
 						});
